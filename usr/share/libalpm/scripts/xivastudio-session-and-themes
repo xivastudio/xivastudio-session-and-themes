@@ -1,0 +1,6 @@
+#!/bin/sh
+
+#troca favicon
+find /usr/share/biglinux/kdebiglinux -type f -exec sed -i 's/big-favicon.*/xiva-favicon/' {} +
+#troca wallpaper
+find /usr/share/biglinux/kdebiglinux -type f -exec sed -i 's/Image=file\:\/\/\/usr\/share\/wallpapers\/.*/Image=file\:\/\/\/usr\/share\/wallpapers\/xiva-wallpaper.png/' {} +

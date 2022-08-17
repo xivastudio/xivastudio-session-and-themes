@@ -1,0 +1,10 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = biglinux-session-and-themes
+
+[Action]
+Description = Multi configurations to login on KDE
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/xivastudio-session-and-themes

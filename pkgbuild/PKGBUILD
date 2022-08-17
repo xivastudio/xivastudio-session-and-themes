@@ -1,0 +1,15 @@
+pkgname=xivastudio-session-and-themes
+pkgver=1.00
+pkgrel=1
+arch=('any')
+license=('GPL')
+depends=('biglinux-session-and-themes')
+url="https://github.com/xivastudio/xivastudio-session-and-themes"
+pkgdesc="favicons and wallpapers for xiva studio"
+source=("git+https://github.com/xivastudio/xivastudio-session-and-themes.git")
+md5sums=(SKIP)
+install=post.install
+
+package() {
+    cp -r "${srcdir}/xivastudio-session-and-themes/usr/" "${pkgdir}/"
+}
